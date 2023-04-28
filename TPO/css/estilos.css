@@ -64,13 +64,14 @@ nav a:hover{ /*NAV A:HOVER CSS*/
 
 #cf { /* Contenedor del banner */
   position:static;
-
 }
+
 #cf img { /* Ambas imagenes del banner */
   position:absolute;
   left:10vw;
   width: 80vw;
   z-index: 0;
+  border-radius: 50px;
 }
 
 /* Puntos clave de la transicion */
@@ -90,11 +91,11 @@ opacity:0;
 }
 
 #cf img.top { /* Imagen animada propiedades de la transicion */
-animation-name: transicion;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 05s;
-animation-direction: alternate;
+  animation-name: transicion;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 05s;
+  animation-direction: alternate;
 }
 
 #principal { /* Propiedades del texto sobre la transicion */
@@ -130,18 +131,18 @@ animation-direction: alternate;
 /*Propiedades pagina Biografia*/
 
 .bio{ /* Propiedades generales de la biografia */
-position: relative; 
-justify-content: space-between;
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: 45vw ;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
-vertical-align: middle;
+  position: relative; 
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 45vw ;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  vertical-align: middle;
 }
 
 .div1 { grid-area: 1 / 1 / 2 / 2;
-width: 30vw;
+  width: 30vw;
 
 }
 .div2 { grid-area: 1 / 2 / 2 / 3;
@@ -160,23 +161,23 @@ width: 30vw;
   padding: 10px;
 }
 .div4 img{
-padding: 5px;
+  padding: 5px;
 }
 .div4 div {
-padding:10px;
-background-image: linear-gradient(to right, white , rgb(235, 235, 235));
-margin: 10px;
-border-radius: 50px;
-line-height: 2rem;
+  padding:10px;
+  background-image: linear-gradient(to right, white , rgb(235, 235, 235));
+  margin: 10px;
+  border-radius: 50px;
+  line-height: 2rem;
 }
 /* Efecto resaltado retratos */
 .bio img{
-margin-top: 10px;
-opacity: 50%;
-
+  margin-top: 10px;
+  opacity: 50%;
 }
+
 .bio img:hover{
-opacity: 100%;
+  opacity: 100%;
 }
 
 /*fin biografia /*
