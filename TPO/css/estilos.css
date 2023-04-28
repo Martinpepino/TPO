@@ -1,0 +1,122 @@
+body{ /*BODY CSS*/
+  margin: 0%;
+  font-family:sans-serif ;
+  /*background-image: url(https://i.pinimg.com/originals/9e/0f/ac/9e0facb910286c8ae97bf43058fb0be1.jpg);*/
+
+}
+
+header { /*HEADER CSS*/
+  background-color: #808080;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px; 
+  border: 1px solid #000000;
+   
+}
+
+footer {
+  background-color: #808080;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px; 
+  border: 1px solid #000000;
+}
+  
+.logo img { /*LOGO CSS*/
+  height: 50px;
+  width: 120px;
+}
+  
+nav ul { /* NAV UL CSS*/
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+   
+nav li { /*NAV LI CSS*/
+  margin-right: 20px;
+}
+  
+nav li:last-child { /*NAV LI LAST-CHILD CSS*/
+  margin-right: 0;
+}
+  
+nav a { /*NAV A CSS*/
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+nav a:hover{ /*NAV A:HOVER CSS*/
+  color: white;
+}
+
+/*Propiedades pagina de inicio*/
+
+#cf { /* Contenedor del banner */
+  position:static;
+
+}
+
+#cf img { /* Ambas imagenes del banner */
+  position:absolute;
+  left:10vw;
+  width: 80vw;
+  z-index: 0;
+}
+
+/* Puntos clave de la transicion */
+@keyframes transicion {
+0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#cf img.top { /* Imagen animada propiedades de la transicion */
+animation-name: transicion;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 05s;
+animation-direction: alternate;
+}
+
+#principal { /* Propiedades del texto sobre la transicion */
+  font-size:larger;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+  z-index: 1;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  left: 10vw;
+  width: 80vw;
+}
+
+.historia{ /* Propiedades generales de la historia */
+  position: relative; 
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+
+.historia > div{ /* Propiedades los recuadros de la historia */
+  margin:   10px;
+
+}
