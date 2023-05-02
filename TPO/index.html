@@ -1,123 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/estilos.css">
-  <title>Biografia</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Biografia</title>
 </head>
+
+    <header> <!--HEADER-->
+        <div class="logo">
+          <img src="https://logotipoz.com/wp-content/uploads/2021/10/Nirvana-logo.png" alt="Logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="INICIO.html" target="principal">Inicio</a></li>
+            <li><a href="BIOGRAFIA.HTML" target="principal">Biografia</a></li>
+            <li><a href="DISCOGRAFIA.HTML" target="principal">Discografia</a></li>
+            <li><a href="FORMULARIO.html" target="principal">Contacto</a></li>
+          </ul>
+        </nav>
+    </header>
+
 <body>
-
-  <header> <!--HEADER-->
-    <div class="logo">
-      <img src="https://logotipoz.com/wp-content/uploads/2021/10/Nirvana-logo.png" alt="Logo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="BIOGRAFIA.HTML">Biografia</a></li>
-        <li><a href="index.html">Historia</a></li>
-        <li><a href="discografia.html">Discografia</a></li>
-        <li><a href="formulario.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <style>
-    p{
-      padding: 5px;
-    }
-    img{
-      width: 25vw;
-      padding: 10px;
-    }
-  </style>
-
-  <div style="height: 55vw; margin: 20px;">
-      <div id="cf">
-          <img class="bottom" src="https://www.rollingstone.com/wp-content/uploads/2019/07/nirvana-live-and-loud.jpg" alt="Foto2" />
-          <img class="top" src="https://www.nme.com/wp-content/uploads/2016/09/2013Nirvana-Press-AntonCorbijn130813.jpg" alt="Foto1" />
-      </div>
-      <div id="principal">
-        <p>
-          A pesar de su corta existencia como grupo, y del suicidio de Cobain en 1994, su música cosechó un tremendo éxito en todo el mundo, hasta el punto de que Nirvana fue considerada una de las mejores bandas de rock de la época y la abanderada del movimiento Grunge.
-        </p>
-      </div>
-  </div>
-  <div class="historia">
-
-    <div> 
-      <img src="data:image/jpeg;base64,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" alt="Kurt y Krist" style="float:left;">
-      <p>
-      Kurt Cobain y Krist Novoselic pasaron parte de su adolescencia en la ciudad de Aberdeen (estado de Washington). 
-      Juntos habían tocado en algunas bandas de la zona de Washington, como The Sellouts, Skid Row o The Stiff Woodies.
-      </p>    
-    </div>
-
-    <div>
-      <img src="https://yucatancultura.com/wp-content/uploads/2017/06/bleach-jason-everman.jpg" alt="Bleach era"  style="float:right">
-        <p>
-        En 1988 grabaron una maqueta y el sello Sub Pop les ofreció grabar un sencillo. Casi al mismo tiempo que se producían cambios en el asiento del batería; el puesto lo ocupó definitivamente Chad Channing. Love Buzz se editó en noviembre de ese año, y en junio de 1989 vio la luz Bleach, el primer álbum de la banda, fresco y amargo a la vez, producido por el gurú Jack Endino. Ese mismo año se les unió Jason Everman como segundo guitarra, unión efímera de sólo unos meses, y poco después se embarcaron en una gira por Europa con TAD.
-        </p>     
-    </div>
-
-    <div>
-      <img src="https://es.rollingstone.com/wp-content/uploads/2022/03/Something-in-the-Way-la-cancion-mas-intensa-de-Nevermind-de-Nirvana.jpg" alt="Pre nevermind" style="float:left;clear: both;">
-        <p>
-        En mayo de 1990, al final de la gira americana, Channing dejó el grupo. Después de estos cambios, Dave Grohl ocuparía finalmente este puesto, tras editar un single, Sliver, en el que todavía tocaba Channing en una cara y en la otra, Dan Peters, de Mudhoney. También marcó su primera colaboración con el productor Butch Vig, otro gurú de la después llamada "movida Grunge", y más conocido últimamente por su nuevo grupo, Garbage.
-        </p>
-    </div>
-
-    <div>      
-      <img src="https://www.soundpark.news/__export/1632518662359/sites/debate/img/2021/09/24/nirvana_x1x.jpg_423682103.jpg" alt="Nevermind"style="float:right;">
-      <p>     
-      Con Butch Vig grabaron su primer álbum para Geffen, Nevermind, editado en septiembre de 1991, que tardaría menos de un mes en vender medio millón de copias en USA. El vídeo del primer single extraído del larga duración Smells like teen spirit fue emitido masivamente por la MTV, contribuyendo a su rápida expansión por el globo. El álbum llegó a número uno en las listas de Estados Unidos en enero de 1992.
-      </p>
-    </div>
-
-    <div>
-      <img src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/4/3/1396542986461/6be70659-a826-43be-b85f-86bf86ca0cf7-1358x2040.jpeg?width=300&quality=85&auto=format&fit=max&s=af2206f5bc56fd6435bf3d93cedc050c" alt="Foto" style="float:left;clear: both;">
-      <p>
-        Aunque el paso a una multinacional discográfica se dejó notar en algo del contenido del disco, su segundo larga duración siguió la línea abierta por Bleach: sentimientos y pasiones prevalecen sobre la perfección técnica y, ayudados por una buena promoción, se encumbraron como abanderados del movimiento Grunge.
-      </p>
-    </div>
-
-    <div>
-      <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/GPQAK45LOBFHZI3UW6NMEGQGOM.jpg" alt="Kurt y Courtney" style="float:right;">
-      <p>
-      Poco después, Kurt Cobain se casó con Courtney Love, líder de la banda Hole. Realizaron giras en verano por Europa (por entonces nació Frances Bean, hija del matrimonio) y comenzaron a grabar su próximo trabajo a finales de ese año con el legendario Steve Albini. Este productor y músico norteamericano, que había militado en Big Black y formó después Rapeman, había producido a infinidad de bandas, como The Breeders o Pixies, antes de trabajar con el trío.
-      </p>
-    </div>
-
-    <div>
-      <img src="https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/Woohwx-jN-kuKfvPCAkKeSHhMd8=/1660x934/smart/filters:no_upscale()/arc-anglerfish-arc2-prod-dmn.s3.amazonaws.com/public/2X4KB4BKCU3CCAD5HOYAP2KOMQ.jpg" alt="In Utero" style="float:left;clear: both;">
-      <p>
-      In Utero fue el título elegido para este trabajo, del que se extrajo Heart-Shaped Box como single de adelanto, en septiembre de 1993. Entre estos dos álbumes se editó Incesticide a finales de 1992, recopilación de caras B e inéditos, hábil maniobra comercial de su sello, tratando de hacer parecer a Nirvana un grupo AOR (Adult Orient Rock, o "rock adulto") en cuanto a regularidad se refiere, cosa difícil, dado el particular carácter de Kurt Cobain.
-
-      El final del año 1993 y el principio de 1994 fue tumultuoso, con llamadas a la policía desde su casa de Seattle y con un ingreso en un hospital de Roma, preludios claros del fatal desenlace: el suicidio de Cobain en Seattle, en abril de 1994.
-      </p>
-    </div>
-
-    <div>
-      <img src="https://elcadillacnegro.files.wordpress.com/2014/12/nirvana-unplugged-in-new-york-kurt-cobain.jpg" alt="Unplugged" style="float:right;">
-      <p>
-      Nirvana dejó de existir como grupo, y aunque algún tiempo más tarde Krist Novoselic volvió a empezar desde abajo con un nuevo grupo llamado Sweet 75, con el cual trabajó con total independencia, nunca llegó a obtener gran repercusión internacional.
-
-      En 1995 Dave Grohl decidió seguir adelante por su cuenta, y grabó en solitario lo que sería su primer álbum con un nuevo grupo. Sólo su amigo Greg Dulli (de los Afghan Whigs) le ayudó con algún aporte en forma de guitarra eléctrica, y en verano del año 1995 salió a la luz el primer álbum de The Foo Fighters. Una vez editado el disco, reclutó a Pat Smear (antes en The Germs y en Nirvana) y a dos ex miembros de Sunny Day Real Estate, Nate Mendel y William Goldsmith, ya como formación permanente. Este primer álbum consiguió una excepcional acogida entre la crítica y el público, mezclando algo del Grunge del pasado junto a un explosivo Power-pop. En 1997 editaron su segundo disco, The colour and the shape, que siguió la línea de su predecesor en cuanto a estilo y éxitos.
-
-      A finales de 2004, tras los interminables pleitos entre los supervivientes de Nirvana (Novoselic, Grohl, la viuda de Cobain, Courtney Love, y la discográfica propietaria de los derechos de las canciones), vio la luz With the lights out, un álbum con sesenta y ocho temas inéditos, entre ensayos y grabaciones domésticas del grupo, que colocó de nuevo a Nirvana en las primeras páginas de la prensa musical de todo el mundo.
-      </p>
-    </div>
-
-  </div>
-
-  <footer> <!--FOOTER-->
-
-    <div class="logo">
-      <img src="https://logotipoz.com/wp-content/uploads/2021/10/Nirvana-logo.png" alt="Logo">
-    </div>
-
-  </footer>
-
+    <iframe src="INICIO.html" name="principal" style="width: 100vw; height: 100vh;"></iframe>
+    
 </body>
 </html>
