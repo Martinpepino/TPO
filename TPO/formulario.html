@@ -9,20 +9,6 @@
  </head>
 <body>
 
-    <header> <!--HEADER-->
-        <div class="logo">
-          <img src="https://logotipoz.com/wp-content/uploads/2021/10/Nirvana-logo.png" alt="Logo">
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Biografia</a></li>
-            <li><a href="#">Historia</a></li>
-            <li><a href="discografia.html">Discografia</a></li>
-            <li><a href="formulario.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
-
     <section>
         <a id="contacto"></a>
         <div>
@@ -40,24 +26,28 @@
                 <label for="tel">Telefono :</label><br>
                 <input type="text" id="tel" size="30" maxlength="15" placeholder="Ingrese su telefono" required>
                 <br><br>
+                <label for="edad">Edad :</label><br>
+                <input type="number" id="edad" size="30" maxlength="3" placeholder="Ingrese su edad" required>
+                <br><br>
+                
                 <label for="mail">Correo electronico :</label><br>
                 <input type="email" id="mail" size="30" maxlength="20" placeholder="Ingrese su correo electronico" required>
                 <br><br>
                 <label for="message">Envianos tu consulta :</label><br>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Complete aqui su consulta o comentario"></textarea>
                 <br><br>
-                <input type="submit" name="submit" id="submit" value="Enviar">
+                <input type="button" name="submit" id="submit" value="Enviar" onclick="evaluarEdad()">
             </form>
         </div>
     </section>
 
-    <footer> <!--FOOTER-->
-
-        <div class="logo">
-          <img src="https://logotipoz.com/wp-content/uploads/2021/10/Nirvana-logo.png" alt="Logo">
-        </div>
-    
-      </footer>
-
+    <script>
+        function evaluarEdad(){
+          let edad=document.getElementById('edad')
+          if (edad.value < 18)
+            alert('Debe ser mayor de edad para ingresar al sitio');
+            return
+        }
+    </script>
 </body>
 </html>
